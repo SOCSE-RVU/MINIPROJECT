@@ -44,7 +44,7 @@ class CarbonFootprintApp:
     
         try:
     
-            df = pd.read_csv(r'C:\Users\91770\Downloads\final_dataset.csv')
+            df = pd.read_csv(r'final_dataset.csv')
             
             # Prepare features
             df['transport_modes_used'] = (
@@ -156,7 +156,7 @@ class CarbonFootprintApp:
     def analysis_section(self):
         
         try:
-            df = pd.read_csv(r'C:\Users\91770\Downloads\final_dataset.csv')
+            df = pd.read_csv(r'final_dataset.csv')
             
             st.subheader("Dataset Overview")
             st.write(f"Total shipments analyzed: {len(df)}")
